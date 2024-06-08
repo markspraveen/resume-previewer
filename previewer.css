@@ -1,0 +1,59 @@
+@media print {
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background: none;
+        color: black;
+    }
+
+    .page {
+        padding: 0px;
+        border: none;
+        box-shadow: none;
+        page-break-after: always;
+    }
+
+    button {
+        display: none;
+    }
+}
+
+body {
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    background: none;
+    color: black;
+}
+
+.resume {
+    width: 810px;
+    margin: auto;
+
+    width: 794px;
+    transform: scale(1);
+    transform-origin: 50% 0px;
+    max-height: 2364px;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.page {
+    border: 1px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    width: 800px;
+    height: 1100px;
+    overflow: hidden;
+    padding: 16px;
+}
+
+.resume-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page:not(:first-child) {
+    margin-top: 20px;
+}
